@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main_page">
+        <div>
+            <img src="../static/image/qr sample.png" alt="qr code">
+        </div>
+        <div class="qr_code"></div>
+        <div class="click_here_text">SCAN HERE TO START</div>
+    </div>
+    <script>
+        // Add a click event listener to the entire document
+        document.addEventListener('click', function() {
+            // Redirect to the redirect page
+            window.location.href = "{{ url_for('main_menu_page') }}";
+        });
+    </script>
+</body>
+</html>
